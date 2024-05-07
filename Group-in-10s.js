@@ -15,3 +15,6 @@ Here's an example of the required output:
   grouped[4]     // undefined
   grouped[5]     // [50]
 */
+
+
+// Solution
