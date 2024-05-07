@@ -24,3 +24,5 @@ const groupIn10s = ( ...args ) => args.reduce( (groups,v) => {
   groups[i] = (groups[i]||[]).concat([v]);
   return groups
 }, []).map( group => group.sort() )
+
+// or
