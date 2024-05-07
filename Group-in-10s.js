@@ -18,3 +18,9 @@ Here's an example of the required output:
 
 
 // Solution
+
+const groupIn10s = ( ...args ) => args.reduce( (groups,v) => {
+  let i = ~~(v/10);
+  groups[i] = (groups[i]||[]).concat([v]);
+  return groups
+}, []).map( group => group.sort() )
