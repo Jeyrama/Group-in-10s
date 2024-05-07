@@ -26,3 +26,16 @@ const groupIn10s = ( ...args ) => args.reduce( (groups,v) => {
 }, []).map( group => group.sort() )
 
 // or
+
+function groupIn10s(...numbers) {
+  let result = [];
+  for (let number of numbers) {
+    let group = ~~(number / 10);
+    
+    if (!result[group]) result[group] = [];
+    
+    result[group].push(number);
+  }
+  
+  return result.map(x => x.sort());
+}
